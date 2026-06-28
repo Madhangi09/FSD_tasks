@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Listener Example</title>
+</head>
+<body>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+        document.getElementById("btn").addEventListener("click", function () {
+            alert("Button clicked!");
+        });
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Validation</title>
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="validateInput()">Submit</button>
+
+    <script>
+        function validateInput() {
+            let name = document.getElementById("name").value;
+
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+            } else {
+                alert("Valid input!");
+            }
+        }
+    </script>
+
+</body>
+</html>
