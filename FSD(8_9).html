@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alert Message</title>
+</head>
+<body>
+
+    <button onclick="showAlert()">Click Me</button>
+
+    <script>
+        function showAlert() {
+            alert("Button clicked successfully!");
+        }
+    </script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Text using DOM</title>
+</head>
+<body>
+
+    <h2 id="text">Hello, World!</h2>
+
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            document.getElementById("text").innerHTML = "Welcome to JavaScript DOM!";
+        }
+    </script>
+
+</body>
+</html>
